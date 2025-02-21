@@ -40,10 +40,17 @@ export const GlobalStyle = createGlobalStyle`
     }
     section {
         padding: 100px 0;
+        
+        @media ${theme.media.mobile} {
+            padding: 80px 0;
+        }
+        
+        
     }
     section:nth-of-type(odd) {
         background-color: ${theme.colors.primaryBg};
     }
+    
     section:nth-of-type(even) {
         background-color: ${theme.colors.secondaryBg};
     }
